@@ -25,6 +25,8 @@ titles.
 Tell termite to change to \fIDIRECTORY\fP when launching.
 .IP "\fB\-\-geometry\fR\fB=\fR\fIGEOMETRY\fR"
 Override the window geometry in pixels.
+.IP "\fB\-\-icon\fR\f8=\fR\fIICON\fR"
+Override the window icon name.
 .IP "\fB\-\-hold\fR"
 Keep termite open after the child process exits.
 .IP "\fB\-\-display\fR\fB=\fR\fIDISPLAY\fR"
@@ -69,6 +71,12 @@ scroll down a line
 scroll up a page
 .IP "\fBshift-pagedown\fP"
 scroll down a page
+.IP "\fBctrl-+\fP"
+increase font size
+.IP "\fBctrl--\fP"
+decrease font size
+.IP "\fBctrl-=\fP"
+reset font size to default
 .SS Selection Mode
 In \fBSelection Mode\fP you interact with the interface of \fBtermite\fP
 and the visual representation of the programs running within it. You can
@@ -95,11 +103,11 @@ backward word
 forward \fIWORD\fP (non-whitespace)
 .IP "\fBB\fP or \fBctrl-left\fP"
 backward \fIWORD\fP (non-whitespace)
-.IP "\fB0\fP"
+.IP "\fB0\fP or \fBhome\fP"
 move cursor to the first column in the row\fP"
 .IP "\fB^\fP"
 beginning-of-line (first non-blank character)
-.IP "\fB$\fP"
+.IP "\fB$\fP or \fBend\fP"
 end-of-line
 .IP "\fBg\fP"
 jump to start of first row
@@ -131,12 +139,6 @@ open the current selection as a url and enter insert mode
 next search match
 .IP "\fBN\fP"
 previous search match
-.IP "\fB+\fP"
-increase font size
-.IP "\fB-\fP"
-decrease font size
-.IP "\fB=\fP"
-reset font size to default
 .SS Hints Mode
 The
 \fBHints Mode\fP is meant for accessing urls outputted to the terminal.
